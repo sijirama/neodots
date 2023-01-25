@@ -9,7 +9,7 @@ set.expandtab = true
 
 set.smartindent = true
 
-set.wrap = false
+set.wrap = true 
 
 set.hlsearch = false 
 set.incsearch = true

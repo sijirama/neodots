@@ -9,7 +9,6 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-
 	
 	--NOTE: todo-commentt
 	    use {
@@ -40,7 +39,7 @@ return require('packer').startup(function(use)
 	--NOTE: undotree
 	use "mbbill/undotree"
 	
-	--NOTE: fugitive (For get, use <leader>gs)
+	--NOTE: fugitive (For git, use <leader>gs)
 	use "tpope/vim-fugitive"
 
 	--NOTE: lsp settings
@@ -76,15 +75,15 @@ return require('packer').startup(function(use)
 	use 'manzeloth/live-server'
 	
 	--NOTE: startup
-	use {"startup-nvim/startup.nvim",
-		        config = function()
-		        	require"startup".setup(require "startup")
-		        end
-	}
+--	use {"startup-nvim/startup.nvim",
+--		        config = function()
+--		        	require"startup".setup(require "startup")
+--		        end
+--	}
 
-
-
-
+    --NOTE: prettier.nvim
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
 
 end)
 

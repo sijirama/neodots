@@ -17,6 +17,7 @@ set("n" , "<leader>pv" , vim.cmd.Ex )
 map("n", "<S-l>", ":bnext<CR>", opts)
 map("n", "<S-h>", ":bprevious<CR>", opts)
 map('n' , '<leader>q' , ':q<CR>' , opts)
+map('n' , '<leader>qq' , ':q!<CR>' , opts)
 
 
 --NOTE: visual mode

@@ -5,15 +5,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
-   -- 'sumneko_lua'
      })
-
---[[lsp.configure('sumneko_lua', {
-	    settings = {
-		Lua = {
-			diagnostics = {
-			globals = { 'vim' }
-	}}}})]]
 
 local cmp = require 'cmp'
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -24,7 +16,12 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-Space>"] = cmp.mapping.complete(),
 })
 
-
+-- If you want insert `(` after select function or method item
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings

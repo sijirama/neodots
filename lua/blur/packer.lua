@@ -74,16 +74,31 @@ return require('packer').startup(function(use)
 	--NOTE: live sever
 	use 'manzeloth/live-server'
 	
-	--NOTE: startup
---	use {"startup-nvim/startup.nvim",
---		        config = function()
---		        	require"startup".setup(require "startup")
---		        end
---	}
+    --NOTE: nvim-ts-autotag
+    use 'windwp/nvim-ts-autotag'
 
-    --NOTE: prettier.nvim
+   --NOTE: nvim - tree 
+    use {
+        'nvim-tree/nvim-tree.lua',
+    requires = {
+        'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'gruvbox' -- optional, updated every week. (see issue #1193)
+    }
+    
+    --NOTE: preetier
+    use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
+
+    --NOTE: zen mode
+    use {
+    "folke/zen-mode.nvim",
+    config = function()
+        require("zen-mode").setup {}
+        end
+    }
+
 
 end)
 

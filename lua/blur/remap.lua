@@ -19,6 +19,12 @@ map("n", "<S-h>", ":bprevious<CR>", opts)
 map('n' , '<leader>q' , ':q<CR>' , opts)
 map('n' , '<leader>qq' , ':q!<CR>' , opts)
 
+--nvim tree stuff
+map('n' , '<leader>e' , ':NvimTreeToggle<CR>' , opts)
+map('n' , '<leader>fe' , ':NvimTreeFocus<CR>' , opts)
+
+--zen mode
+map("n" , "<leader>zz" ,":ZenMode<CR>" , opts)
 
 --NOTE: visual mode
 set('v' , "J" , ":m '>+1<CR>gv=gv ")

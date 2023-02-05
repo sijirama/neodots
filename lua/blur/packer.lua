@@ -21,6 +21,10 @@ return require('packer').startup(function(use)
 	--NOTE: gruvbox
 	use { "ellisonleao/gruvbox.nvim" }
 
+    --NOTE: kanagawa
+	use { "rebelot/kanagawa.nvim" }
+
+
 	--NOTE: treesitter
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 	

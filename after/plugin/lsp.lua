@@ -1,13 +1,13 @@
 local lsp = require('lsp-zero')
+local cmp = require 'cmp'
+
 
 lsp.preset('recommended')
-
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
      })
 
-local cmp = require 'cmp'
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
@@ -22,6 +22,63 @@ cmp.event:on(
   'confirm_done',
   cmp_autopairs.on_confirm_done()
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+require'cmp'.setup {
+  sources = {
+    { name = 'nvim_lsp' }
+  }
+}
+
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  require('lspconfig')['sumneko_lua'].setup {
+        capabilities = capabilities
+      }
+  require('lspconfig')['pyright'].setup {
+        capabilities = capabilities
+      }
+  require('lspconfig')['tsserver'].setup{
+        on_attach = on_attach,
+        flags = lsp_flags,
+    }
+  require('lspconfig')['html'].setup{
+        capabilities = capabilities
+    }
+  require('lspconfig')['cssls'].setup{
+        capabilities = capabilities
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
@@ -46,7 +103,14 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 end)
 
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  update_in_insert = false,
+  underline = true,
+  severity_sort = false,
+  float = true,
+})
+
 lsp.setup()
-
-
-

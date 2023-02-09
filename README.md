@@ -1,4 +1,4 @@
-### My Current Neovim Configuration
+### Neovim Configuration
 
 ![telescope]('./screenshots/telescope.JPG')
 ![codebase]('./screenshots/codebase.JPG')

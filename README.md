@@ -1,5 +1,5 @@
 ### Neovim Configuration
 
-![telescope]('./screenshots/telescope.JPG')
-![codebase]('./screenshots/codebase.JPG')
-![luasnip]('./screenshots/luasnip.JPG')
+![telescope]('./screenshot/telescope.JPG')
+![codebase]('./screenshot/codebase.JPG')
+![luasnip]('./screenshot/luasnip.JPG')

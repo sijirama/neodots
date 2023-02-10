@@ -1,8 +1,6 @@
-### Neovim Configuration
+### Neovim Environment.
 
-![telescope]('/screenshot/telescope.JPG')
-![codebase]('/screenshot/codebase.JPG')
-![luasnip]('/screenshot/luasnip.JPG')
+> Kanagawa colorscheme
 
 <img src="screenshots/telescope.JPG" alt="telescrope">
 <img src="screenshots/codebase.JPG" alt="codebase">

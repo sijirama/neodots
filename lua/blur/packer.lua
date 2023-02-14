@@ -2,6 +2,9 @@ return require('packer').startup(function(use)
 
 	--NOTE: packer
 	use 'wbthomason/packer.nvim'
+
+    --NOTE: colorizer
+    use 'NvChad/nvim-colorizer.lua'
 	
 	--NOTE: telecope
 	use {

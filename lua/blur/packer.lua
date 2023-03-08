@@ -12,6 +12,9 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
+    use 'ThePrimeagen/vim-be-good'
+    --:VimBeGood to play
 	
 	--NOTE: todo-commentt
 	    use {
@@ -24,6 +27,10 @@ return require('packer').startup(function(use)
 	--NOTE: gruvbox
 	use { "ellisonleao/gruvbox.nvim" }
 
+    --NOTE: numb for number peeking 
+    use 'nacro90/numb.nvim'
+
+
     --NOTE: kanagawa
 	use { "rebelot/kanagawa.nvim" }
 
@@ -33,6 +40,9 @@ return require('packer').startup(function(use)
 	
 	--NOTE: devicons
 	use 'kyazdani42/nvim-web-devicons'
+
+	--NOTE: reticle
+    use('tummetott/reticle.nvim')
 
 	--NOTE: lualine
 	    use {

@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
+  ["numb.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\numb.nvim",
+    url = "https://github.com/nacro90/numb.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
@@ -214,6 +219,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["reticle.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\reticle.nvim",
+    url = "https://github.com/tummetott/reticle.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -229,6 +239,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "C:\\Users\\STUDENTLOGIN\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-fugitive"] = {
     loaded = true,

@@ -62,7 +62,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 
 
-require("lvim.lsp.manager").setup("cssls", {
+require("cmp_nvim_lsp").setup("cssls", {
 settings = {
   css = { validate = true,
         lint = {

@@ -30,6 +30,11 @@ return require('packer').startup(function(use)
     --NOTE: numb for number peeking 
     use 'nacro90/numb.nvim'
 
+    --NOTE: github copilot
+    use "github/copilot.vim"
+
+    --NOTE: tabnine client for neovim
+    use { 'codota/tabnine-nvim', run= "pwsh.exe -file .\\dl_binaries.ps1" }
 
     --NOTE: kanagawa
 	use { "rebelot/kanagawa.nvim" }

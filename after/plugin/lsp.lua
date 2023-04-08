@@ -110,6 +110,7 @@ lsp.on_attach(function(client, bufnr)
 		vim.cmd.LspStop('eslint')
 		return	end
 
+
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 	vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)

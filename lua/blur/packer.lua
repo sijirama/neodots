@@ -33,6 +33,16 @@ return require('packer').startup(function(use)
     --NOTE: github copilot
     use "github/copilot.vim"
 
+
+    --NOTE: Lsp UI
+    use {
+        "jinzhongjia/LspUI.nvim",
+        -- event = 'VimEnter',
+        config=function()
+            require("LspUI").setup()
+        end
+    }
+
     --NOTE: tabnine client for neovim
     use { 'codota/tabnine-nvim', run= "pwsh.exe -file .\\dl_binaries.ps1" }
 

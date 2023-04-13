@@ -110,11 +110,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -164,6 +159,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  moveline = {
+    loaded = true,
+    path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\moveline",
+    url = "https://github.com/willothy/moveline"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -275,6 +275,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: LspUI.nvim
+time([[Config for LspUI.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nLspUI\frequire\0", "config", "LspUI.nvim")
+time([[Config for LspUI.nvim]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
@@ -283,10 +287,6 @@ time([[Config for todo-comments.nvim]], false)
 time([[Config for zen-mode.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
--- Config for: LspUI.nvim
-time([[Config for LspUI.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nLspUI\frequire\0", "config", "LspUI.nvim")
-time([[Config for LspUI.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

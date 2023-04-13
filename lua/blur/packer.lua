@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
     use 'nacro90/numb.nvim'
 
     --NOTE: github copilot
-    use "github/copilot.vim"
+    --use "github/copilot.vim"
 
 
     --NOTE: Lsp UI
@@ -52,6 +52,9 @@ return require('packer').startup(function(use)
 
 	--NOTE: treesitter
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
+
+	--NOTE: Moveline.nvim
+    --use('willothy/moveline', { run = 'make' })
 	
 	--NOTE: devicons
 	use 'kyazdani42/nvim-web-devicons'

@@ -161,6 +161,15 @@ return require('packer').startup(function(use)
         end
     }
 
+    --NOTE: which-key to remeber my hotkeys
+    use{
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end
+    }
+
 end)
 
 

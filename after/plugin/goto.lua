@@ -18,3 +18,21 @@ require('goto-preview').setup {
   stack_floating_preview_windows = true, -- Whether to nest floating windows
   preview_window_title = { enable = true, position = "right" }, -- Whether to set the preview window title as the filename
 }
+
+
+----------------NOTE: add which key mapping reminder
+local wk = require("which-key")
+
+wk.register({
+	["<leader>"] = {
+		-- Harpoon
+		g = {
+			name = "Go to preview",
+			d = { "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", "Preview definition " },
+			t = { "<cmd>lua require('goto-preview').goto_preview_type__definition()<CR>", "Preview type definition" },
+			i = { "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", "Preview implementation" },
+			r = { "<cmd>lua require('goto-preview').goto_preview_references<CR>", "Preview references" },
+			P = { "<cmd>lua require('goto-preview').close_all_win()<CR>", "Close all windows" },
+		},
+	},
+})

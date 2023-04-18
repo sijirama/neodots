@@ -148,11 +148,18 @@ return require('packer').startup(function(use)
 
     --NOTE: commenting 
     use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-}
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
+    use {
+        'rmagatti/goto-preview',
+        config = function()
+        require('goto-preview').setup {}
+        end
+    }
 
 end)
 

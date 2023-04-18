@@ -134,6 +134,17 @@ return require('packer').startup(function(use)
         end
     }
 
+    --NOTE: split and join code
+    use({
+        'Wansmer/treesj',
+        requires = { 'nvim-treesitter' },
+        config = function()
+        require('treesj').setup({--[[ your config ]]})
+        end,
+        })
+
+    --NOTE: move
+    use 'fedepujol/move.nvim'
 
 end)
 

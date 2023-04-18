@@ -146,6 +146,14 @@ return require('packer').startup(function(use)
     --NOTE: move
     use 'fedepujol/move.nvim'
 
+    --NOTE: commenting 
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
+
 end)
 
 

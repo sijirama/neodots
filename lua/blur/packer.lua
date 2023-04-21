@@ -169,6 +169,12 @@ return require('packer').startup(function(use)
             vim.o.timeoutlen = 300
         end
     }
+    
+    --NOTE: toggle terminal
+        use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+            require("toggleterm").setup()
+        end
+    }
 
 end)
 

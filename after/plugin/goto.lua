@@ -20,8 +20,6 @@ require('goto-preview').setup {
 }
 
 
-----------------NOTE: add which key mapping reminder
-local wk = require("which-key")
 
 wk.register({
 	["<leader>"] = {

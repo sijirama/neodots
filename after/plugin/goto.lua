@@ -20,6 +20,7 @@ require('goto-preview').setup {
 }
 
 
+local wk = require("which-key")
 
 wk.register({
 	["<leader>"] = {

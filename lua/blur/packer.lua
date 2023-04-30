@@ -169,6 +169,15 @@ return require('packer').startup(function(use)
             vim.o.timeoutlen = 300
         end
     }
+
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {
+            }
+        end
+    }
     
     --NOTE: toggle terminal
         use {"akinsho/toggleterm.nvim", tag = '*', config = function()

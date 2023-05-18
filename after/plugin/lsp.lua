@@ -10,11 +10,15 @@ lsp.ensure_installed({
 
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+	--['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+	--['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+    ['<C-k>'] = cmp.mapping.select_next_item(),
+    ['<C-j>'] = cmp.mapping.select_prev_item(),
 	['<C-y>'] = cmp.mapping.confirm({ select = true }),
 	["<C-Space>"] = cmp.mapping.complete(),
 })
+
+
 
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
@@ -128,9 +132,9 @@ lsp.setup()
 vim.diagnostic.config({
   virtual_text = true,
   signs = true,
-  update_in_insert = false,
+  update_in_insert = true,
   underline = true,
-  severity_sort = false,
+  severity_sort = true,
   float = true,
 })
 

@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
     }
 
     --NOTE: tabnine client for neovim
-    use { 'codota/tabnine-nvim', run= "pwsh.exe -file .\\dl_binaries.ps1" }
+    use { 'codota/tabnine-nvim', run = "powershell.exe -file .\\dl_binaries.ps1" }
 
     --NOTE: kanagawa
 	use { "rebelot/kanagawa.nvim" }

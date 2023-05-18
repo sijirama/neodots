@@ -33,3 +33,5 @@ set('v' , "K" , ":m '<-2<CR>gv=gv ")
 
 --NOTE: insert mode
 map("i", "jk", "<ESC>", opts)
+
+

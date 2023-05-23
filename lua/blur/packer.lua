@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
 	--NOTE: devicons
 	use 'kyazdani42/nvim-web-devicons'
 
+	--NOTE: twilight, for dimming inactive code  
+	use 'folke/twilight.nvim'
+
 	--NOTE: reticle
     use('tummetott/reticle.nvim')
 
@@ -119,6 +122,16 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         --tag = 'gruvbox' -- optional, updated every week. (see issue #1193)
+    }
+
+   --NOTE: start page
+    use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+        --require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
     }
     
     --NOTE: preetier

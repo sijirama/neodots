@@ -80,6 +80,10 @@ return require('packer').startup(function(use)
 	--NOTE: fugitive (For git, use <leader>gs)
 	use "tpope/vim-fugitive"
 
+	--NOTE: lsp-lens
+    use "VidocqH/lsp-lens.nvim"
+
+
 	--NOTE: lsp settings
 	use {
 		  'VonHeikemen/lsp-zero.nvim',
@@ -197,6 +201,10 @@ return require('packer').startup(function(use)
             require("toggleterm").setup()
         end
     }
+
+
+    --NOTE: wakatime stats
+    use 'wakatime/vim-wakatime'
 
 end)
 

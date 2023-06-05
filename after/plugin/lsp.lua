@@ -5,7 +5,6 @@ local cmp = require 'cmp'
 lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
-	'eslint',
      })
 
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -55,7 +54,10 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
       }
   require('lspconfig')['tsserver'].setup{
         on_attach = on_attach,
+        capabilities = capabilities,
+        detached=false,
         flags = lsp_flags,
+        filetypes = { 'typescript', 'typescriptreact' }
     }
   require('lspconfig')['html'].setup{
         capabilities = capabilities
@@ -64,6 +66,9 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
         capabilities = capabilities
     }
 
+---NOTE: trying to disable eslint from attaching to typescript files
+
+---NOTE: end of experiment
 
 
 require("cmp_nvim_lsp").setup("cssls", {

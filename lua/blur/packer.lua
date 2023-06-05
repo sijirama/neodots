@@ -27,6 +27,9 @@ return require('packer').startup(function(use)
 	--NOTE: gruvbox
 	use { "ellisonleao/gruvbox.nvim" }
 
+	--NOTE: trailblazer 
+	--use { "LeonHeidelbach/trailblazer.nvim" }
+
     --NOTE: numb for number peeking 
     use 'nacro90/numb.nvim'
 

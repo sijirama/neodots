@@ -36,6 +36,8 @@ return require('packer').startup(function(use)
     --NOTE: github copilot
     --use "github/copilot.vim"
 
+    --NOTE: Nvim Notify 
+    use 'rcarriga/nvim-notify'
 
     --NOTE: Lsp UI
     use {

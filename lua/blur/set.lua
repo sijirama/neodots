@@ -1,5 +1,7 @@
 local set = vim.opt
 
+vim.opt.termguicolors = true
+vim.notify = require("notify")
 set.number = true
 set.relativenumber = true
 set.autoindent = true

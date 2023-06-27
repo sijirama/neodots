@@ -1,5 +1,6 @@
 local set = vim.opt
 
+--let NERDTreeShowHidden=0
 vim.opt.termguicolors = true
 vim.notify = require("notify")
 set.number = true

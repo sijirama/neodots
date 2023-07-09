@@ -39,6 +39,9 @@ return require('packer').startup(function(use)
     --NOTE: Nvim Notify 
     use 'rcarriga/nvim-notify'
 
+    --NOTE: Hover 
+    use "lewis6991/hover.nvim"
+
     --NOTE: Lsp UI
     use {
         "jinzhongjia/LspUI.nvim",

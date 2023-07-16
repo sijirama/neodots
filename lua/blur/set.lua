@@ -2,7 +2,6 @@ local set = vim.opt
 
 --let NERDTreeShowHidden=0
 vim.opt.termguicolors = true
-vim.notify = require("notify")
 set.number = true
 set.relativenumber = true
 set.autoindent = true
@@ -17,3 +16,6 @@ set.scrolloff = 7
 set.cursorline = true
 
 
+
+
+vim.notify = require("notify")

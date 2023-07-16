@@ -1,2 +1,1 @@
-require ("blur")
-
+require("blur")

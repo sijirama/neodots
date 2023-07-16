@@ -16,6 +16,4 @@ set.scrolloff = 7
 set.cursorline = true
 
 
-
-
 vim.notify = require("notify")

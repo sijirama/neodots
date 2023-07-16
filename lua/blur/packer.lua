@@ -165,6 +165,9 @@ return require('packer').startup(function(use)
         end
     }
 
+    --NOTE: aesthetic animations
+    use 'eandrju/cellular-automaton.nvim'
+
     --NOTE: split and join code
     use({
         'Wansmer/treesj',

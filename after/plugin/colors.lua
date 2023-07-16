@@ -7,11 +7,11 @@
 
 
 --monochrome colorscheme
-vim.cmd([[colorscheme monochrome]])
+--vim.cmd([[colorscheme monochrome]])
 
 --oxocarbon colorscheme
---vim.o.background = "dark" -- or "light" for light mode
---vim.cmd([[colorscheme oxocarbon]])
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme oxocarbon]])
 
 
 ---Colorizer

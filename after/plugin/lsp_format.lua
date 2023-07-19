@@ -9,6 +9,6 @@ end
 
 require("lspconfig").clangd.setup { on_attach = on_attach, sync = true }
 require("lspconfig").pyright.setup { on_attach = on_attach, sync = true }
---require("lspconfig")["lua_ls"].setup { on_attach = on_attach, sync = false }
+require("lspconfig")["lua_ls"].setup { on_attach = on_attach, sync = false }
 --require("lspconfig")[""].setup {on_attach = on_attach , sync = true}
 require("lspconfig").rust_analyzer.setup { on_attach = on_attach, sync = true }

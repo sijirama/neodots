@@ -2,20 +2,20 @@ return require('packer').startup(function(use)
     --NOTE: packer
     use 'wbthomason/packer.nvim'
 
-    --NOTE: colorizer
+    --NOTE: colorizer // add colors to hex codes
     use 'NvChad/nvim-colorizer.lua'
 
-    --NOTE: telecope
+    --NOTE: telecope // telescope
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    --NOTE: VimBeGood to play // practice vim
     use 'ThePrimeagen/vim-be-good'
-    --:VimBeGood to play
 
-    --NOTE: todo-commentt
+    --NOTE: todo-comment // My favourite commenting lib
     use {
         "folke/todo-comments.nvim",
         requires = "nvim-lua/plenary.nvim",
@@ -23,25 +23,22 @@ return require('packer').startup(function(use)
             require("todo-comments").setup {}
         end }
 
-    --NOTE: gruvbox
+    --NOTE: gruvbox // my fav theme
     use { "ellisonleao/gruvbox.nvim" }
 
-    --NOTE: oxocarbon theme
-    use { 'nyoom-engineering/oxocarbon.nvim' }
-
-    --NOTE: monochrome theme
+    --NOTE: monochrome theme // monochrome theme
     use { 'kdheepak/monochrome.nvim' }
 
-    --NOTE: numb for number peeking
+    --NOTE: kanagawa
+    use { "rebelot/kanagawa.nvim" }
+
+    --NOTE: numb // for number peeking
     use 'nacro90/numb.nvim'
 
-    --NOTE: github copilot
-    --use "github/copilot.vim"
-
-    --NOTE: Nvim Notify
+    --NOTE: Nvim Notify // notifications
     use 'rcarriga/nvim-notify'
 
-    --NOTE: Hover
+    --NOTE: Hover // hover for info // n, K
     use "lewis6991/hover.nvim"
 
     --NOTE: Lsp UI
@@ -56,19 +53,11 @@ return require('packer').startup(function(use)
     --NOTE: tabnine client for neovim
     use { 'codota/tabnine-nvim', run = "powershell.exe -file .\\dl_binaries.ps1" }
 
-    --NOTE: kanagawa
-    use { "rebelot/kanagawa.nvim" }
-
-
     --NOTE: treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
-
-    --NOTE: lsp signature
+    --NOTE: lsp signature // hint as you type, panda hints
     use { "ray-x/lsp_signature.nvim", }
-
-    --NOTE: Moveline.nvim
-    --use('willothy/moveline', { run = 'make' })
 
     --NOTE: devicons
     use 'kyazdani42/nvim-web-devicons'
@@ -218,7 +207,6 @@ return require('packer').startup(function(use)
         require("toggleterm").setup()
     end
     }
-
 
     --NOTE: wakatime stats
     use 'wakatime/vim-wakatime'

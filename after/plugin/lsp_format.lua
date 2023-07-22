@@ -1,5 +1,8 @@
 require("lsp-format").setup {
-    sync = true
+    sync = true,
+    clangd = {
+        tab_width = 4
+    }
 }
 
 local on_attach = function(client)

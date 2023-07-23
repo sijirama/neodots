@@ -33,3 +33,7 @@ set('v', "K", ":m '<-2<CR>gv=gv ")
 
 --NOTE: insert mode
 map("i", "jk", "<ESC>", opts)
+
+--NOTE: format code
+vim.api.nvim_set_keymap('n', '<Leader>f', '<cmd>lua vim.lsp.buf.format()<CR>',
+    { noremap = true, silent = true })

@@ -17,26 +17,12 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ["<C-Space>"] = cmp.mapping.complete(),
 })
 
-
-
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 cmp.event:on(
     'confirm_done',
     cmp_autopairs.on_confirm_done()
 )
-
-
-
-
-
-
-
-
-
-
-
-
 
 require 'cmp'.setup {
     sources = {
@@ -66,11 +52,6 @@ require('lspconfig')['cssls'].setup {
     capabilities = capabilities
 }
 
----NOTE: trying to disable eslint from attaching to typescript files
-
----NOTE: end of experiment
-
-
 require("cmp_nvim_lsp").setup("cssls", {
     settings = {
         css = {
@@ -95,26 +76,9 @@ require("cmp_nvim_lsp").setup("cssls", {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 lsp.setup_nvim_cmp({
     mapping = cmp_mappings
 })
-
 
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
@@ -122,7 +86,6 @@ lsp.on_attach(function(client, bufnr)
         vim.cmd.LspStop('eslint')
         return
     end
-
 
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)

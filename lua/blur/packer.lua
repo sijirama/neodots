@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     use { "ellisonleao/gruvbox.nvim" }
 
     --NOTE: monochrome theme // monochrome theme
-    use { 'kdheepak/monochrome.nvim' }
+    use { "zootedb0t/citruszest.nvim" }
 
     --NOTE: kanagawa
     use { "rebelot/kanagawa.nvim" }

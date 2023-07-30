@@ -132,6 +132,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["glance.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\gbemi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\glance.nvim",
+    url = "https://github.com/dnlhc/glance.nvim"
+  },
   ["goto-preview"] = {
     config = { "\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17goto-preview\frequire\0" },
     loaded = true,
@@ -362,18 +367,34 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
+-- Config for: treesj
+time([[Config for treesj]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vtreesj\frequire\0", "config", "treesj")
+time([[Config for treesj]], false)
+-- Config for: LspUI.nvim
+time([[Config for LspUI.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nLspUI\frequire\0", "config", "LspUI.nvim")
+time([[Config for LspUI.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\nD\0\0\2\0\4\0\t6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0K\0\1\0\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
 time([[Config for todo-comments.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
+-- Config for: zen-mode.nvim
+time([[Config for zen-mode.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+time([[Config for zen-mode.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
@@ -382,26 +403,10 @@ time([[Config for toggleterm.nvim]], false)
 time([[Config for goto-preview]], true)
 try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17goto-preview\frequire\0", "config", "goto-preview")
 time([[Config for goto-preview]], false)
--- Config for: LspUI.nvim
-time([[Config for LspUI.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nLspUI\frequire\0", "config", "LspUI.nvim")
-time([[Config for LspUI.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-try_loadstring("\27LJ\2\nD\0\0\2\0\4\0\t6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0K\0\1\0\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
-time([[Config for which-key.nvim]], false)
--- Config for: treesj
-time([[Config for treesj]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vtreesj\frequire\0", "config", "treesj")
-time([[Config for treesj]], false)
--- Config for: zen-mode.nvim
-time([[Config for zen-mode.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
-time([[Config for zen-mode.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

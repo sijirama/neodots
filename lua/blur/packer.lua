@@ -208,6 +208,8 @@ return require('packer').startup(function(use)
     end
     }
 
+    use "dnlhc/glance.nvim"
+
     --NOTE: wakatime stats
     use 'wakatime/vim-wakatime'
 

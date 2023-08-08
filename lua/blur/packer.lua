@@ -210,6 +210,9 @@ return require('packer').startup(function(use)
 
     use "dnlhc/glance.nvim"
 
+    --NOTE: make transparent
+    use "xiyaowong/transparent.nvim"
+
     --NOTE: wakatime stats
     use 'wakatime/vim-wakatime'
 

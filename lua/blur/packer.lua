@@ -218,4 +218,16 @@ return require('packer').startup(function(use)
 
     --NOTE: formatter
     use "lukas-reineke/lsp-format.nvim"
+
+    --NOTE: Plugins added on 12/08/2023 -----------------------------------------------------------------------------------------------------
+
+    --NOTE: smooth cursor
+    use { 'gen740/SmoothCursor.nvim',
+        config = function()
+            require('smoothcursor').setup()
+        end
+    }
+
+    --NOTE: sidebar
+    use 'sidebar-nvim/sidebar.nvim'
 end)

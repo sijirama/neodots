@@ -1,4 +1,5 @@
 require("LspUI").setup({
+    prompt = false,
     lightbulb = {
         enable = false,         -- close by default
         command_enable = false, -- close by default, this switch does not have to be turned on, this command has no effect

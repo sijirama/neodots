@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
     --NOTE: gruvbox // my fav theme
     use { "ellisonleao/gruvbox.nvim" }
 
-    --NOTE: monochrome theme // monochrome theme
+    --NOTE: monochrome theme // citruszest theme
     use { "zootedb0t/citruszest.nvim" }
 
     --NOTE: kanagawa
@@ -34,9 +34,6 @@ return require('packer').startup(function(use)
 
     --NOTE: numb // for number peeking
     use 'nacro90/numb.nvim'
-
-    --NOTE: Nvim Notify // notifications
-    use 'rcarriga/nvim-notify'
 
     --NOTE: Hover // hover for info // n, K
     use "lewis6991/hover.nvim"
@@ -141,11 +138,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    --NOTE: preetier
-    use('neovim/nvim-lspconfig')
-    use('jose-elias-alvarez/null-ls.nvim')
-    use('MunifTanjim/prettier.nvim')
-
     --NOTE: zen mode
     use {
         "folke/zen-mode.nvim",
@@ -230,4 +222,14 @@ return require('packer').startup(function(use)
 
     --NOTE: sidebar
     use 'sidebar-nvim/sidebar.nvim'
+
+    --NOTE: tailwind sorter
+    require('packer').startup(function(use)
+        use {
+            'laytan/tailwind-sorter.nvim',
+            requires = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
+            config = function() require('tailwind-sorter').setup() end,
+            run = 'cd formatter && npm i && npm run build',
+        }
+    end)
 end)

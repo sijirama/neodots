@@ -59,9 +59,6 @@ return require('packer').startup(function(use)
     --NOTE: devicons
     use 'kyazdani42/nvim-web-devicons'
 
-    --NOTE: twilight, for dimming inactive code
-    use 'folke/twilight.nvim'
-
     --NOTE: reticle
     use('tummetott/reticle.nvim')
 
@@ -73,12 +70,6 @@ return require('packer').startup(function(use)
 
     --NOTE: harpoon (For file navigation)
     use 'theprimeagen/harpoon'
-
-    --NOTE: undotree
-    use "mbbill/undotree"
-
-    --NOTE: fugitive (For git, use <leader>gs)
-    use "tpope/vim-fugitive"
 
     --NOTE: lsp-lens
     use "VidocqH/lsp-lens.nvim"
@@ -112,9 +103,6 @@ return require('packer').startup(function(use)
 
     --NOTE: indentation
     use "lukas-reineke/indent-blankline.nvim"
-
-    --NOTE: live sever
-    use 'manzeloth/live-server'
 
     --NOTE: nvim-ts-autotag
     use 'windwp/nvim-ts-autotag'
@@ -223,13 +211,4 @@ return require('packer').startup(function(use)
     --NOTE: sidebar
     use 'sidebar-nvim/sidebar.nvim'
 
-    --NOTE: tailwind sorter
-    require('packer').startup(function(use)
-        use {
-            'laytan/tailwind-sorter.nvim',
-            requires = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
-            config = function() require('tailwind-sorter').setup() end,
-            run = 'cd formatter && npm i && npm run build',
-        }
-    end)
 end)

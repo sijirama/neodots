@@ -1,16 +1,12 @@
 --gruvbox colorscheme
 vim.o.background = "dark" -- or "light" for light mode
+
+--vim.cmd([[colorscheme kanagawa]])
+--vim.cmd([[colorscheme citruszest]])
 --vim.cmd([[colorscheme gruvbox]])
 
---kanagawa colorscheme
-vim.cmd([[colorscheme kanagawa]])
---vim.cmd([[colorscheme citruszest]])
 
 
-
---oxocarbon colorscheme
---vim.o.background = "dark" -- or "light" for light mode
---vim.cmd([[colorscheme oxocarbon]])
 
 
 ---Colorizer

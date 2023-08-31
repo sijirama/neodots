@@ -1,5 +1,6 @@
 ### Neovim Environment.
 #### This shit breaks every 2 days.
+#### pls be careful.
 
 > Kanagawa colorscheme
 but i'm currently using gruvbox

@@ -212,6 +212,7 @@ return require('packer').startup(function(use)
     use 'sidebar-nvim/sidebar.nvim'
 
     --NOTE: prettier plugin/ or wont format on save
+    use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
 

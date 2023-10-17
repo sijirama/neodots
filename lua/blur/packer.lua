@@ -31,6 +31,9 @@ return require('packer').startup(function(use)
 
     --NOTE: kanagawa
     use { "rebelot/kanagawa.nvim" }
+    
+    --NOTE: kamou
+    use {"ntk148v/komau.vim"}
 
     --NOTE: numb // for number peeking
     use 'nacro90/numb.nvim'
@@ -42,9 +45,9 @@ return require('packer').startup(function(use)
     use {
         "jinzhongjia/LspUI.nvim",
         -- event = 'VimEnter',
-        config = function()
-            require("LspUI").setup()
-        end
+        --config = function()
+        --    require("LspUI").setup()
+        --end
     }
 
     --NOTE: tabnine client for neovim
@@ -121,8 +124,8 @@ return require('packer').startup(function(use)
         'goolord/alpha-nvim',
         requires = { 'nvim-tree/nvim-web-devicons' },
         config = function()
-            require 'alpha'.setup(require 'alpha.themes.startify'.config)
-            --require'alpha'.setup(require'alpha.themes.dashboard'.config)
+            --require 'alpha'.setup(require 'alpha.themes.startify'.config)
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
         end
     }
 

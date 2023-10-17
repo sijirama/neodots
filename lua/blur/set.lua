@@ -14,6 +14,4 @@ set.hlsearch = false
 set.incsearch = true
 set.scrolloff = 7
 set.cursorline = true
-
-
---vim.notify = require("notify")
+set.iskeyword:append("-")

@@ -13,7 +13,8 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     --['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-k>'] = cmp.mapping.select_next_item(),
     ['<C-j>'] = cmp.mapping.select_prev_item(),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    --['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ['<cr>'] = cmp.mapping.confirm({ select = true }),
     ["<C-Space>"] = cmp.mapping.complete(),
 })
 
@@ -27,7 +28,12 @@ cmp.event:on(
 require 'cmp'.setup {
     sources = {
         { name = 'nvim_lsp' }
-    }
+    },
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
+  }
 }
 
 -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..

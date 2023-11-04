@@ -1,7 +1,7 @@
 # neodots.
 > my neovim configuration 
 
-Welcome to my Neovim configuration. "neodots" is the culmination of my journey with Neovim, developed and refined over time to match my preferences and workflow. It reflects my experience and understanding of how Neovim can be tailored to enhance productivity and provide an enjoyable coding environment. I've spent considerable time fine-tuning this configuration, and I continue to use it for my own coding tasks. I use neovim currently on my windows machine for university, although the configuration is far from perfect, as i only install plugins when i really need them.
+"neodots" is the culmination of my journey with Neovim, developed and refined over time to match my preferences and workflow. It reflects my experience and understanding of how Neovim can be tailored to enhance productivity and provide an enjoyable coding environment. I've spent considerable time fine-tuning this configuration, and I continue to use it for my own coding tasks. I use neovim currently on my windows machine for university, although the configuration is far from perfect, as i only install plugins when i really need them.
 
 ## Getting Started
 
@@ -10,6 +10,9 @@ Welcome to my Neovim configuration. "neodots" is the culmination of my journey w
 Before you start, make sure you have the following prerequisites on your Windows machine:
 
 - **C Compiler:** Neovim on Windows requires a C compiler like GCC. Ensure that you have a C compiler installed on your system.
+- **Neovim:** Obviously.
+
+> to download Neovim ![check out!](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 ### Installation
 
@@ -21,6 +24,17 @@ clone this repository
 git clone https://github.com/sijirama/neodots
 
 ```
+This config uses packer as its main plugin manager so youwill need to have packer installed on your machine.
+
+> Windows Powershell Installation
+
+```sh
+git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+
+```
+add the config to the file path
+
+> On Windows NeoVim gets its configuration from %userprofile%\AppData\Local\nvim
 
 ## Screenshots
 

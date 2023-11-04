@@ -23,61 +23,6 @@ clone this repository
 git clone https://github.com/sijirama/neodots
 
 ```
-
-## Screenshots
-
-Here are some screenshots showcasing the appearance of "neodots" in action:
-
-- Start Page:
-  ![Start Page](screenshots/startpage.jpg)
-
-- Telescope Plugin:
-  ![Telescope Plugin](screenshots/telescope.JPG)
-
-- Zen Mode:
-  ![Zen Mode](screenshots/zenmode.jpg)
-
-- Twilight Theme:
-  ![Twilight Theme](screenshots/twilight.jpg)
-
-## Customization
-
-Feel free to customize "neodots" to suit your preferences. You can add or remove plugins, modify key mappings, and tweak the settings to make Neovim your own.
-
-## Issues and Contributions
-
-If you encounter any issues or have suggestions for improving "neodots," please open an issue on this repository. I welcome contributions and pull requests from the Neovim community to make this configuration even better.
-
-## License
-
-This project is licensed under the 
-## Screenshots
-
-Here are some screenshots showcasing the appearance of "neodots" in action:
-
-- Start Page:
-  ![Start Page](screenshots/startpage.jpg)
-
-- Telescope Plugin:
-  ![Telescope Plugin](screenshots/telescope.JPG)
-
-- Zen Mode:
-  ![Zen Mode](screenshots/zenmode.jpg)
-
-- Twilight Theme:
-  ![Twilight Theme](screenshots/twilight.jpg)
-
-## Customization
-
-Feel free to customize "neodots" to suit your preferences. You can add or remove plugins, modify key mappings, and tweak the settings to make Neovim your own.
-
-## Issues and Contributions
-
-If you encounter any issues or have suggestions for improving "neodots," please open an issue on this repository. I welcome contributions and pull requests from the Neovim community to make this configuration even better.
-
-## License
-
-This project is licensed under the 
 ## Screenshots
 
 Here are some screenshots showcasing the appearance of "neodots" in action:
@@ -107,10 +52,3 @@ If you encounter any issues or have suggestions for improving "neodots," please 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
 
 Enjoy using "neodots" and happy coding!
-
-
-
-<img src="screenshots/startpage.jpg" alt="startpage">
-<img src="screenshots/telescope.JPG" alt="telescope">
-<img src="screenshots/zenmode.jpg" alt="zenmode">
-<img src="screenshots/twilight.jpg" alt="twilight">

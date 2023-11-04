@@ -1,9 +1,7 @@
 # neodots.
 > my neovim configuration 
 
-Welcome to my Neovim configuration, lovingly named "neodots." This configuration is designed to enhance your Neovim experience and make it more powerful and efficient. Whether you're a seasoned Neovim user or just getting started, "neodots" is here to help you make the most out of this versatile text editor.
-
-i use neovim currently on my windows machine for university.
+Welcome to my Neovim configuration. "neodots" is the culmination of my journey with Neovim, developed and refined over time to match my preferences and workflow. It reflects my experience and understanding of how Neovim can be tailored to enhance productivity and provide an enjoyable coding environment. I've spent considerable time fine-tuning this configuration, and I continue to use it for my own coding tasks. I use neovim currently on my windows machine for university, although the configuration is far from perfect, as i only install plugins when i really need them.
 
 ## Getting Started
 
@@ -23,6 +21,7 @@ clone this repository
 git clone https://github.com/sijirama/neodots
 
 ```
+
 ## Screenshots
 
 Here are some screenshots showcasing the appearance of "neodots" in action:

@@ -16,12 +16,7 @@ return require('packer').startup(function(use)
     use 'ThePrimeagen/vim-be-good'
 
     --NOTE: todo-comment // My favourite commenting lib
-    use {
-        "folke/todo-comments.nvim",
-        requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require("todo-comments").setup {}
-        end }
+    use "folke/todo-comments.nvim"
 
     --NOTE: gruvbox // my fav theme
     use { "ellisonleao/gruvbox.nvim" }
@@ -31,9 +26,9 @@ return require('packer').startup(function(use)
 
     --NOTE: kanagawa
     use { "rebelot/kanagawa.nvim" }
-    
+
     --NOTE: kamou
-    use {"ntk148v/komau.vim"}
+    use { "ntk148v/komau.vim" }
 
     --NOTE: numb // for number peeking
     use 'nacro90/numb.nvim'
@@ -219,4 +214,6 @@ return require('packer').startup(function(use)
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
 
+    --NOTE: notify
+    use 'rcarriga/nvim-notify'
 end)

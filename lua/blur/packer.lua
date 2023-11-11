@@ -216,4 +216,10 @@ return require('packer').startup(function(use)
 
     --NOTE: notify
     use 'rcarriga/nvim-notify'
+
+    --NOTE: markdown view
+    use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
+
+    --NOTE: table view
+    -- use 'vidocqh/data-viewer.nvim'
 end)

@@ -219,4 +219,12 @@ return require('packer').startup(function(use)
 
     --NOTE: markdown view
     use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
+
+    --NOTE: Live server
+    use({
+        "barrett-ruth/live-server.nvim",
+        config = function()
+            require('live-server').setup()
+        end
+    })
 end)

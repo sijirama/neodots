@@ -34,7 +34,7 @@ require 'cmp'.setup {
         expand = function(args)
             luasnip.lsp_expand(args.body)
         end,
-    }
+  }
 }
 
 -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..

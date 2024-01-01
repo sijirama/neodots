@@ -89,10 +89,6 @@ return require('packer').startup(function(use)
             { 'saadparwaiz1/cmp_luasnip' },
             { 'hrsh7th/cmp-nvim-lsp' },
             { 'hrsh7th/cmp-nvim-lua' },
-
-            -- Snippets
-            { 'L3MON4D3/LuaSnip' },
-            { 'rafamadriz/friendly-snippets' },
         }
     }
 
@@ -220,11 +216,12 @@ return require('packer').startup(function(use)
     --NOTE: markdown view
     use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
 
-    --NOTE: Live server
+    --NOTE: we are trying to get some snippets in here.
     use({
-        "barrett-ruth/live-server.nvim",
-        config = function()
-            require('live-server').setup()
-        end
+        "L3MON4D3/LuaSnip",
+        tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        -- install jsregexp (optional!:).
+        run = "make install_jsregexp"
     })
+    use "rafamadriz/friendly-snippets"
 end)

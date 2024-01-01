@@ -40,17 +40,7 @@ add the config to the file path
 
 Here are some screenshots showcasing the appearance of "neodots" in action:
 
-- Start Page:
-  ![Start Page](screenshots/startpage.jpg)
-
-- Telescope Plugin:
-  ![Telescope Plugin](screenshots/telescope.JPG)
-
-- Zen Mode:
-  ![Zen Mode](screenshots/zenmode.jpg)
-
-- Twilight Theme:
-  ![Twilight Theme](screenshots/twilight.jpg)
+![vim](screenshots/nvim.png)
 
 ## Customization
 

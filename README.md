@@ -36,9 +36,6 @@ add the config to the file path
 
 > On Windows NeoVim gets its configuration from %userprofile%\AppData\Local\nvim
 
-## Screenshots
-
-Here are some screenshots showcasing the appearance of "neodots" in action:
 
 ![vim](screenshots/nvim.png)
 

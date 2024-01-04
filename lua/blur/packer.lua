@@ -120,25 +120,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    --NOTE: zen mode
-    use {
-        "folke/zen-mode.nvim",
-        config = function()
-            require("zen-mode").setup {}
-        end
-    }
-
-    --NOTE: aesthetic animations
-    use 'eandrju/cellular-automaton.nvim'
-
-    --NOTE: split and join code
-    use({
-        'Wansmer/treesj',
-        requires = { 'nvim-treesitter' },
-        config = function()
-            require('treesj').setup({ --[[ your config ]] })
-        end,
-    })
 
     --NOTE: move
     use 'fedepujol/move.nvim'
@@ -155,15 +136,6 @@ return require('packer').startup(function(use)
         'rmagatti/goto-preview',
         config = function()
             require('goto-preview').setup {}
-        end
-    }
-
-    --NOTE: which-key to remeber my hotkeys
-    use {
-        "folke/which-key.nvim",
-        config = function()
-            vim.o.timeout = true
-            vim.o.timeoutlen = 300
         end
     }
 
@@ -223,5 +195,12 @@ return require('packer').startup(function(use)
         -- install jsregexp (optional!:).
         run = "make install_jsregexp"
     })
+
     use "rafamadriz/friendly-snippets"
+
+    -- leap.nvim NOTE: move around
+    use "ggandor/leap.nvim"
+
+
+    use "folke/which-key.nvim"
 end)

@@ -203,4 +203,7 @@ return require('packer').startup(function(use)
 
 
     use "folke/which-key.nvim"
+
+    -- fold code
+    use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 end)

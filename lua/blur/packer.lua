@@ -206,4 +206,22 @@ return require('packer').startup(function(use)
 
     -- fold code
     use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+
+    -- NOTE: Plugins added on 08/01/2024 -----------------------------------------------------------------------------------------------------
+
+    -- NOTE:plugin tells me the scope of where i'm coding in
+    use {
+        "SmiteshP/nvim-navic",
+        requires = "neovim/nvim-lspconfig"
+    }
+
+    -- NOTE:plugin to tell me virtual types in code
+    use 'jubnzv/virtual-types.nvim'
+
+    -- NOTE:plugin for components, mostly other plugins use this
+    use 'MunifTanjim/nui.nvim'
+
+
+    -- NOTE:plugin for components, mostly other plugins use this
+    use "SmiteshP/nvim-navbuddy"
 end)

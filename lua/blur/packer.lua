@@ -185,9 +185,6 @@ return require('packer').startup(function(use)
     --NOTE: notify
     use 'rcarriga/nvim-notify'
 
-    --NOTE: markdown view
-    use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
-
     --NOTE: we are trying to get some snippets in here.
     use({
         "L3MON4D3/LuaSnip",
@@ -215,13 +212,16 @@ return require('packer').startup(function(use)
         requires = "neovim/nvim-lspconfig"
     }
 
-    -- NOTE:plugin to tell me virtual types in code
-    use 'jubnzv/virtual-types.nvim'
-
     -- NOTE:plugin for components, mostly other plugins use this
     use 'MunifTanjim/nui.nvim'
 
 
     -- NOTE:plugin for components, mostly other plugins use this
     use "SmiteshP/nvim-navbuddy"
+
+    -- NOTE: session handler for nvim
+    use "olimorris/persisted.nvim"
+
+    -- NOTE: duck in my screen
+    use 'tamton-aquib/duck.nvim'
 end)

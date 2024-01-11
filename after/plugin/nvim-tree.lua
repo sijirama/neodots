@@ -20,7 +20,7 @@ require("nvim-tree").setup({
         group_empty = true,
     },
     filters = {
-        dotfiles = false,
+        dotfiles = false, custom = { '^.git$' }
     },
     sync_root_with_cwd = true,
     respect_buf_cwd = true,

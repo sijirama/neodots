@@ -4,9 +4,9 @@ local luasnip = require "luasnip"
 
 
 lsp.preset('recommended')
-lsp.ensure_installed({
-    'tsserver',
-})
+-- lsp.ensure_installed({
+--     'tsserver',
+-- })
 
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -83,9 +83,9 @@ require("cmp_nvim_lsp").setup("cssls", {
 })
 
 
-lsp.setup_nvim_cmp({
-    mapping = cmp_mappings
-})
+-- lsp.setup_nvim_cmp({
+--     mapping = cmp_mappings
+-- })
 
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }

@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
 
     --NOTE: telecope // telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
@@ -26,6 +26,10 @@ return require('packer').startup(function(use)
 
     --NOTE: kanagawa
     use { "rebelot/kanagawa.nvim" }
+
+    use({
+        "neanias/everforest-nvim",
+    })
 
     --NOTE: kamou
     use { "ntk148v/komau.vim" }

@@ -11,7 +11,13 @@ local on_attach = function(client)
     -- ... custom code ...
 end
 
+
+require("lsp-format").setup {}
+
 require("lspconfig").clangd.setup { on_attach = on_attach, sync = true, tab_width = 4 }
 require("lspconfig").pyright.setup { on_attach = on_attach, sync = true }
 require("lspconfig")["lua_ls"].setup { on_attach = on_attach, sync = false }
 require("lspconfig").rust_analyzer.setup { on_attach = on_attach, sync = true }
+require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
+--require("lspconfig").[""].setup { on_attach = require("lsp-format").on_attach }
+

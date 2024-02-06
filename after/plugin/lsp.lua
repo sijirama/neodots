@@ -1,23 +1,40 @@
 local lsp = require('lsp-zero')
 local cmp = require 'cmp'
 local luasnip = require "luasnip"
-
+local lspconfig = require('lspconfig')
 
 lsp.preset('recommended')
+
 -- lsp.ensure_installed({
 --     'tsserver',
 -- })
 
+
+
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    --['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    --['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-k>'] = cmp.mapping.select_next_item(),
-    ['<C-j>'] = cmp.mapping.select_prev_item(),
-    --['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    ['<cr>'] = cmp.mapping.confirm({ select = true }),
-    ["<C-Space>"] = cmp.mapping.complete(),
+-- local cmp_mappings = lsp.defaults.cmp_mappings({
+--     --['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+--     --['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+--     ['<C-k>'] = cmp.mapping.select_next_item(cmp_select),
+--     ['<C-j>'] = cmp.mapping.select_prev_item(cmp_select),
+--     --["<tab>"] = cmp.mapping.select_next_item(),
+--     ['<cr>'] = cmp.mapping.confirm({ select = true }),
+--     --['<C-Right>'] = cmp.mapping.confirm({ select = true }),
+--     ["<C-Space>"] = cmp.mapping.complete(),
+-- })
+
+--NOTE: the mappings dont work since i converted to linux
+
+cmp.setup({
+    mapping = {
+        ['<C-k>'] = cmp.mapping.select_next_item(),
+        ['<C-j>'] = cmp.mapping.select_prev_item(),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-Space>'] = cmp.mapping.complete(),
+    },
 })
+
+--NOTE: end of new code to text
 
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
@@ -116,3 +133,30 @@ vim.diagnostic.config({
     severity_sort = true,
     float = true,
 })
+
+--NOTE: my attempt in attaching templ files to the lsp
+
+vim.filetype.add({ extension = { templ = "templ" } })
+
+lspconfig.html.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "html", "templ" },
+})
+
+lspconfig.htmx.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "html", "templ" },
+})
+
+lspconfig.tailwindcss.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "templ", "astro", "javascript", "typescript", "react", "typescriptreact", "javascriptreact" },
+    init_options = { userLanguages = { templ = "html" } },
+})
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.templ" }, callback = vim.lsp.buf.format })
+
+----------------------------------------- attempt ended

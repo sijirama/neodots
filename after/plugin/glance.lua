@@ -2,6 +2,7 @@
 local glance = require('glance')
 local actions = glance.actions
 
+
 glance.setup({
     height = 18, -- Height of the window
     zindex = 45,

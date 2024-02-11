@@ -6,6 +6,7 @@ require('lsp-zero')
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').tsserver.setup({})
+require('lspconfig').tailwindcss.setup({})
 
 
 -- NOTE: cmp is dumb as fuck
@@ -30,4 +31,3 @@ cmp.setup({
         ['<C-Space>'] = cmp.mapping.complete(),
     })
 })
-

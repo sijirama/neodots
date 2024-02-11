@@ -8,6 +8,19 @@ require('lspconfig').gopls.setup({})
 require('lspconfig').tsserver.setup({})
 require('lspconfig').tailwindcss.setup({})
 
+-- NOTE: lets try mason
+local lsp_zero = require('lsp-zero')
+lsp_zero.on_attach(function(client, bufnr)
+    lsp_zero.default_keymaps({ buffer = bufnr })
+end)
+
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = {},
+    handlers = {
+        lsp_zero.default_setup,
+    },
+})
 
 -- NOTE: cmp is dumb as fuck
 local cmp = require('cmp')

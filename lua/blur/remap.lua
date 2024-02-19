@@ -24,6 +24,9 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>fe', ':NvimTreeFocus<CR>', opts)
 map('n', '<leader>ef', ':NvimTreeCollapse<CR>', opts)
 
+-- todo telescope
+map('n', '<leader>ft', ':TodoTelescope<CR>', opts)
+
 --zen mode
 map("n", "<leader>zz", ":ZenMode<CR>", opts)
 

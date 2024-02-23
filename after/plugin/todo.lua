@@ -11,6 +11,7 @@ require("todo-comments").setup {
         },
         TODO = { icon = " ", color = "info" },
         WTAF = { icon = " ", alt = { "BRO", "WTF", "NIGGA" }, color = "warning" },
+        IDGAF = { icon = " ", alt = { "IDF", "IDGAFF" }, color = "warning" },
         PLS = { icon = " ", color = "warning" },
         HACK = { icon = " ", color = "warning" },
         WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },

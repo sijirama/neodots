@@ -6,3 +6,5 @@ vim.keymap.set("n", "S-xx", "<cmd>TroubleToggle<cr>",
 )
 
 vim.keymap.set('n', '<A-m>', ':TroubleToggle<CR>', opts)
+
+

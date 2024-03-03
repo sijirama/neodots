@@ -1,6 +1,12 @@
 --gruvbox colorscheme
 vim.o.background = "dark" -- or "light" for light mode
 
+--NOTE: transparent_mode
+require("gruvbox").setup({
+    transparent_mode = true,
+})
+
+
 --vim.cmd([[colorscheme everforest]])
 --vim.cmd([[colorscheme kanagawa]])
 --vim.cmd([[colorscheme citruszest]])

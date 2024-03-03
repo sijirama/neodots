@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
     }
 
     --NOTE: tabnine client for neovim
-    use { 'codota/tabnine-nvim', run = "powershell.exe -file .\\dl_binaries.ps1" }
+    use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
 
     --NOTE: treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })

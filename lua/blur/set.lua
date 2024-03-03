@@ -15,3 +15,4 @@ set.incsearch = true
 set.scrolloff = 7
 set.cursorline = true
 set.iskeyword:append("-")
+

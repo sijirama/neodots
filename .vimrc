@@ -18,7 +18,7 @@ set laststatus=2                     " Always show status line
 
 " Remap jk to escape from insert mode
 inoremap jk <Esc>
-
+ 
 " Easy file navigation with netrw using space-e
 nnoremap <Space>e :e <C-R>=expand("%:p:h")<CR>/
 nnoremap <Space>E :Explore<CR>

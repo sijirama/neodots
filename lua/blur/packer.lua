@@ -228,4 +228,7 @@ return require('packer').startup(function(use)
 
     -- NOTE: duck in my screen
     use 'tamton-aquib/duck.nvim'
+
+    -- NOTE: commander to manage keybindings
+    use "FeiyouG/commander.nvim"
 end)

@@ -82,20 +82,20 @@ set clipboard=unnamedplus
 
 " Plugins
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" Vundle plugin to manage vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Add custom plugins here
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'morhetz/gruvbox'
-Plugin 'christoomey/vim-tmux-navigator'
-
-call vundle#end()
-filetype plugin indent on "required
-
-" Call after plugin is loaded
-colorscheme gruvbox
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" " Vundle plugin to manage vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+"
+" " Add custom plugins here
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-surround'
+" Plugin 'tpope/vim-commentary'
+" Plugin 'morhetz/gruvbox'
+" Plugin 'christoomey/vim-tmux-navigator'
+"
+" call vundle#end()
+" filetype plugin indent on "required
+"
+" " Call after plugin is loaded
+" colorscheme gruvbox

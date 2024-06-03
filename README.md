@@ -1,4 +1,4 @@
-# neodots.
+# neodots
 > my neovim configuration 
 
 "Neodots" is the culmination of my Neovim journey, carefully crafted to suit my coding preferences and workflow. It reflects my ongoing effort to enhance productivity and create an enjoyable coding environment. Currently used on my Windows machine for university tasks, this configuration is a result of continuous refinement. I install plugins only when truly needed, acknowledging that perfection is a journey, not a destination.

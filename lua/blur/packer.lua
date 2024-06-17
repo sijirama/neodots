@@ -243,4 +243,29 @@ return require('packer').startup(function(use)
     })
 
     use 'terryma/vim-multiple-cursors'
+
+    use({
+        'MeanderingProgrammer/markdown.nvim',
+        as = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
+        after = { 'nvim-treesitter' },
+        config = function()
+            require('render-markdown').setup({})
+        end,
+    })
+
+    use { "anuvyklack/windows.nvim", -- for resizing current windows
+        requires = "anuvyklack/middleclass",
+        config = function()
+            require('windows').setup()
+        end
+    }
+
+    -- for tabs
+    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+    use 'romgrk/barbar.nvim'
+
+    use {
+        "FeiyouG/commander.nvim",
+        requires = { "nvim-telescope/telescope.nvim" }
+    }
 end)

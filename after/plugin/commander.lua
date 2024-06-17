@@ -26,28 +26,8 @@ local commander = require("commander")
 
 commander.add({
     {
-        desc = "Search inside current buffer using Telescope",
-        cmd = "<CMD>Telescope current_buffer_fuzzy_find<CR>",
-        keys = { "n", "<leader>fl" },
+        desc = "Open Commander.nvim",
+        cmd = "<CMD>Telescope commander<CR>",
+        keys = { "n", "<leader>fc" },
     },
-    {
-        desc = "Find files using Telescope",
-        cmd = "<CMD>Telescope find_files<CR>",
-        keys = { "n", "<leader>ff" },
-    },
-    {
-        desc = "Live grep using Telescope",
-        cmd = "<CMD>Telescope live_grep<CR>",
-        keys = { "n", "<leader>fg" },
-    },
-    {
-        desc = "Find files in Git repository using Telescope",
-        cmd = "<CMD>Telescope git_files<CR>",
-        keys = { "n", "<C-p>" },
-    },
-    {
-        desc = "Search for a string in files using Telescope",
-        cmd = "<CMD>lua builtin.grep_string({ search = vim.fn.input('Grep > ') })<CR>",
-        keys = { "n", "<leader>ps" },
-    }
 })

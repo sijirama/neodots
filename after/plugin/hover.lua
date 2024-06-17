@@ -20,3 +20,31 @@ require("hover").setup {
 -- Setup keymaps
 vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
 vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
+
+local commander = require("commander")
+local hover = require("hover")
+
+commander.add({
+    {
+        desc = "[hover.nvim] Show hover information",
+        cmd = hover.hover,
+        keys = { "n", "K" },
+    },
+    {
+        desc = "[hover.nvim] Select hover information",
+        cmd = hover.hover_select,
+        keys = { "n", "gK" },
+    },
+})
+
+local wk = require("which-key")
+
+wk.register({
+    ["<leader>"] = {
+        h = {
+            name = "hover.nvim",
+            K = { "<cmd>lua require('hover').hover()<CR>", "Show hover information" },
+            gK = { "<cmd>lua require('hover').hover_select()<CR>", "Select hover information" },
+        },
+    },
+})

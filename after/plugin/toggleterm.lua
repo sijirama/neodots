@@ -5,6 +5,7 @@ local opts = { noremap = true, silent = true }
 
 vim.keymap.set('n', '<leader>t', ":ToggleTerm direction=float dir=. <CR>", opts)
 
+
 function _G.set_terminal_keymaps()
     local opts = { buffer = 0 }
     vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)

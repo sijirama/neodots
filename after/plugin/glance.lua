@@ -88,3 +88,28 @@ vim.keymap.set('n', 'gD', '<CMD>Glance definitions<CR>')
 vim.keymap.set('n', 'gR', '<CMD>Glance references<CR>')
 vim.keymap.set('n', 'gY', '<CMD>Glance type_definitions<CR>')
 vim.keymap.set('n', 'gM', '<CMD>Glance implementations<CR>')
+
+local commander = require("commander")
+
+commander.add({
+    {
+        desc = "[Glance] Show definitions",
+        cmd = "<CMD>Glance definitions<CR>",
+        keys = { "n", "gD" },
+    },
+    {
+        desc = "[Glance] Show references",
+        cmd = "<CMD>Glance references<CR>",
+        keys = { "n", "gR" },
+    },
+    {
+        desc = "[Glance] Show type definitions",
+        cmd = "<CMD>Glance type_definitions<CR>",
+        keys = { "n", "gY" },
+    },
+    {
+        desc = "[Glance] Show implementations",
+        cmd = "<CMD>Glance implementations<CR>",
+        keys = { "n", "gM" },
+    },
+})

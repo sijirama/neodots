@@ -7,11 +7,12 @@ require("gruvbox").setup({
 })
 
 
---vim.cmd([[colorscheme everforest]])
---vim.cmd([[colorscheme kanagawa]])
---vim.cmd([[colorscheme citruszest]])
+vim.cmd([[colorscheme citruszest]])
 vim.cmd([[colorscheme gruvbox]])
---vim.cmd([[colorscheme komau]])
+vim.cmd("colorscheme cyberdream")
+vim.cmd([[colorscheme kanagawa]])
+vim.cmd([[colorscheme everforest]])
+vim.cmd([[colorscheme komau]])
 
 
 

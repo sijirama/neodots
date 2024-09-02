@@ -34,6 +34,8 @@ return require('packer').startup(function(use)
     --NOTE: kamou
     use { "ntk148v/komau.vim" }
 
+    use { "scottmckendry/cyberdream.nvim" }
+
     --NOTE: numb // for number peeking
     use 'nacro90/numb.nvim'
 

@@ -229,9 +229,6 @@ return require('packer').startup(function(use)
     -- NOTE: duck in my screen
     use 'tamton-aquib/duck.nvim'
 
-    -- NOTE: commander to manage keybindings
-    use "FeiyouG/commander.nvim"
-
     use({
         "iamcco/markdown-preview.nvim",
         run = "cd app && npm install",
@@ -268,4 +265,10 @@ return require('packer').startup(function(use)
         "FeiyouG/commander.nvim",
         requires = { "nvim-telescope/telescope.nvim" }
     }
+
+    --use { 'kkharji/lsqlite.nvim', run = 'make' }
+    use { "kkharji/sqlite.lua" }
+
+    --NOTE: virtual text stuff
+    use "rachartier/tiny-inline-diagnostic.nvim"
 end)

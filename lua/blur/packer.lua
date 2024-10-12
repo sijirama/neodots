@@ -275,4 +275,6 @@ return require('packer').startup(function(use)
     use "rachartier/tiny-inline-diagnostic.nvim"
 
     use "tris203/precognition.nvim"
+
+    use "stevearc/conform.nvim"
 end)

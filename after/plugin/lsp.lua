@@ -5,7 +5,7 @@ require('lsp-zero')
 -- NOTE: set some lsps up
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').gopls.setup({})
-require('lspconfig').tsserver.setup({})
+require('lspconfig').ts_ls.setup({})
 require('lspconfig').tailwindcss.setup({})
 
 -- NOTE: lets try mason

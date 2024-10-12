@@ -1,0 +1,1 @@
+- if conform works properly as a formatter for the next 2 weeks (starting 12/oct) then delete null-ls and prettier

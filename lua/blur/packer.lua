@@ -273,4 +273,6 @@ return require('packer').startup(function(use)
 
     --NOTE: virtual text stuff
     use "rachartier/tiny-inline-diagnostic.nvim"
+
+    use "tris203/precognition.nvim"
 end)

@@ -34,6 +34,11 @@ map("n", "<leader>zz", ":ZenMode<CR>", opts)
 set('v', "J", ":m '>+1<CR>gv=gv ")
 set('v', "K", ":m '<-2<CR>gv=gv ")
 
+vim.api.nvim_set_keymap('n', '<A-Right>', ':lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-Left>', ':lua vim.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-Down>', ':cnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-Up>', ':cprev<CR>', { noremap = true, silent = true })
+
 
 --NOTE: insert mode
 map("i", "jk", "<ESC>", opts)

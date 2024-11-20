@@ -7,6 +7,14 @@ require('lspconfig').lua_ls.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').ts_ls.setup({})
 require('lspconfig').tailwindcss.setup({})
+require 'lspconfig'.zls.setup({
+    settings = {
+        zls = {
+            zig_exe_path = '/home/sijirama/bin/zig/zig'
+        }
+    }
+})
+
 
 -- NOTE: lets try mason
 local lsp_zero = require('lsp-zero')

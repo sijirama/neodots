@@ -277,4 +277,6 @@ return require('packer').startup(function(use)
     use "tris203/precognition.nvim"
 
     use "stevearc/conform.nvim"
+
+    use "sphamba/smear-cursor.nvim"
 end)
